@@ -158,7 +158,7 @@ function inizialiMaiuscole(frase) {
       const dopo = maiuscole[i].slice(1);
       maiuscole[i] = prima + dopo;
    }
-return maiuscole.join(' ');
+   return maiuscole.join(' ');
 }
 
 console.log(inizialiMaiuscole('pinco pallino incredibile'));
@@ -171,10 +171,22 @@ console.log(inizialiMaiuscole('pinco pallino incredibile'));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+
+function togliPrimoEUltimo(testo) {
+
+   return testo.slice(1, -1); //Domanda per Dario -> il testo normale parte da 1 invece ceh da 0? perché ho provato a mettere 0 ma non splicava per bene
+
+}
+console.log(togliPrimoEUltimo('Epicode'));
+
 /* ESERCIZIO 10 — dammiCasuali
    Funzione dammiCasuali(n): ritorna un array di n numeri interi casuali tra 0 e 10 (inclusi).
    Usa Math.random e Math.floor.
 */
+
+function dammiCasuali(n) {
+   Math.random()
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
