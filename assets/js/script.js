@@ -174,7 +174,7 @@ console.log(inizialiMaiuscole('pinco pallino incredibile'));
 
 function togliPrimoEUltimo(testo) {
 
-   return testo.slice(1, -1); //Domanda per Dario -> il testo normale parte da 1 invece ceh da 0? perché ho provato a mettere 0 ma non splicava per bene
+   return testo.slice(1, -1); //Domanda per Dario -> il testo normale parte da 1 invece che da 0? perché ho provato a mettere 0 ma non splicava per bene
 
 }
 console.log(togliPrimoEUltimo('Epicode'));
@@ -185,7 +185,7 @@ console.log(togliPrimoEUltimo('Epicode'));
 */
 
 function dammiCasuali(n) {
-   Math.random()
+   Math.random(Math.floor )
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
