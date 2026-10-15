@@ -184,9 +184,12 @@ console.log(togliPrimoEUltimo('Epicode'));
    Usa Math.random e Math.floor.
 */
 
-function dammiCasuali(n) {
-   Math.random(Math.floor )
+
+function dammiCasuali() {
+   const aCaso = Number(Math.floor(Math.random() * 11 ));
 }
+
+console.log(dammiCasuali());
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
