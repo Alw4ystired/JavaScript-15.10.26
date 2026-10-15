@@ -89,12 +89,12 @@ console.log(dentroIntervallo(15));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function epify(testo) {
-   /*const testo = ('EPICODE ')*/
-if (testo.startsWith('EPICODE ')) {
-   return testo;
-} else {
-   return 'EPICODE'+ testo;
-}
+
+   if (testo.startsWith('EPICODE ')) {
+      return testo;
+   } else {
+      return 'EPICODE' + testo;
+   }
 }
 
 console.log(epify(' Pippo'));
@@ -106,6 +106,18 @@ console.log(epify('EPICODE Pippo'));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function divisibilePer3o7(n1) {
+
+   if (n1 >= 0 && (n1 % 3 === 0 || n1 % 7 === 0)) {
+   return true;
+} else {
+   return false;
+}
+};
+
+console.log(divisibilePer3o7(21));
+console.log(divisibilePer3o7(20));
+
 /* ESERCIZIO 7 — invertiStringa
    Funzione invertiStringa(testo): ritorna la stringa invertita.
    Vincolo: niente .reverse() di array.
@@ -113,6 +125,21 @@ console.log(epify('EPICODE Pippo'));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function invertiStringa(testo) {
+  const caratteri = testo.split('');
+  const invertiti = [];
+
+  for (let i = caratteri.length - 1; i >= 0; i--) {
+    invertiti.push(caratteri[i]);
+  }
+
+  return invertiti.join('');
+}
+
+
+console.log(invertiStringa('EPICODE'));  
+console.log(invertiStringa('Alessandro'));
 
 /* ESERCIZIO 8 — inizialiMaiuscole
    Funzione inizialiMaiuscole(frase): metti in maiuscolo la prima lettera di ogni parola.
