@@ -52,10 +52,10 @@ function distanzaDa19(n) {
    } else {
       return distanza
    }
-   };
+};
 
-   console.log(distanzaDa19(5));
-   console.log(distanzaDa19(25));
+console.log(distanzaDa19(5));
+console.log(distanzaDa19(25));
 
 
 /* ESERCIZIO 4 — dentroIntervallo
@@ -65,6 +65,21 @@ function distanzaDa19(n) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function dentroIntervallo(n) {
+   if (n >= 20 && n <= 100) {
+      return true;
+   } else if (n === 400) {
+      return true;
+   } else {
+      return false;
+   }
+}
+
+console.log(dentroIntervallo(99));
+console.log(dentroIntervallo(150));
+console.log(dentroIntervallo(400));
+console.log(dentroIntervallo(15));
+
 /* ESERCIZIO 5 — epify
    Funzione epify(testo): aggiunge "EPICODE " davanti.
    Se il testo comincia già con "EPICODE", lo lascia invariato.
@@ -72,6 +87,18 @@ function distanzaDa19(n) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function epify(testo) {
+   /*const testo = ('EPICODE ')*/
+if (testo.startsWith('EPICODE ')) {
+   return testo;
+} else {
+   return 'EPICODE'+ testo;
+}
+}
+
+console.log(epify(' Pippo'));
+console.log(epify('EPICODE Pippo'));
 
 /* ESERCIZIO 6 — divisibilePer3o7
    Funzione divisibilePer3o7(n): true se n positivo E divisibile per 3 O per 7.
