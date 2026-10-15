@@ -25,6 +25,17 @@ console.log(area(3, 4));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function sommaPazza(a, b) {
+   if (a === b) {
+      return (a + b) * 3;
+   } else {
+      return (a + b);
+   }
+}
+
+console.log(sommaPazza(2, 3));
+console.log(sommaPazza(4, 4));
+
 /* ESERCIZIO 3 — distanzaDa19
    Funzione distanzaDa19(n): ritorna Math.abs(n - 19).
    Se n > 19: ritorna distanza * 3.
@@ -32,6 +43,20 @@ console.log(area(3, 4));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
+function distanzaDa19(n) {
+   const distanza = Math.abs(n - 19)
+   if (n > 19) {
+      return (n * 3);
+   } else {
+      return distanza
+   }
+   };
+
+   console.log(distanzaDa19(5));
+   console.log(distanzaDa19(25));
+
 
 /* ESERCIZIO 4 — dentroIntervallo
    Funzione dentroIntervallo(n):
