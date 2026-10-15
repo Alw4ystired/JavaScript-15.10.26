@@ -109,10 +109,10 @@ console.log(epify('EPICODE Pippo'));
 function divisibilePer3o7(n1) {
 
    if (n1 >= 0 && (n1 % 3 === 0 || n1 % 7 === 0)) {
-   return true;
-} else {
-   return false;
-}
+      return true;
+   } else {
+      return false;
+   }
 };
 
 console.log(divisibilePer3o7(21));
@@ -127,18 +127,18 @@ console.log(divisibilePer3o7(20));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function invertiStringa(testo) {
-  const caratteri = testo.split('');
-  const invertiti = [];
+   const caratteri = testo.split('');
+   const invertiti = [];
 
-  for (let i = caratteri.length - 1; i >= 0; i--) {
-    invertiti.push(caratteri[i]);
-  }
+   for (let i = caratteri.length - 1; i >= 0; i--) {
+      invertiti.push(caratteri[i]);
+   }
 
-  return invertiti.join('');
+   return invertiti.join('');
 }
 
 
-console.log(invertiStringa('EPICODE'));  
+console.log(invertiStringa('EPICODE'));
 console.log(invertiStringa('Alessandro'));
 
 /* ESERCIZIO 8 — inizialiMaiuscole
@@ -148,6 +148,21 @@ console.log(invertiStringa('Alessandro'));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function inizialiMaiuscole(frase) {
+
+   const maiuscole = frase.split(' ');
+
+   for (let i = 0; i < maiuscole.length; i++) {
+      const prima = maiuscole[i].slice(0, 1).toUpperCase();
+      const dopo = maiuscole[i].slice(1);
+      maiuscole[i] = prima + dopo;
+   }
+return maiuscole.join(' ');
+}
+
+console.log(inizialiMaiuscole('pinco pallino incredibile'));
+
 
 /* ESERCIZIO 9 — togliPrimoEUltimo
    Funzione togliPrimoEUltimo(testo): rimuovi primo e ultimo carattere.
